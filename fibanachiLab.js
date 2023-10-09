@@ -1,14 +1,14 @@
 'use strict'
 
-function fibonacciCalculation(n) {
+function fibonacciCalc(n) {
   if (n <= 1)
     return n;
   else 
-    return fibonacciCalculation(n - 1) + fibonacciCalculation(n - 2); //recursion  
+    return fibonacciCalc(n - 1) + fibonacciCalc(n - 2); //recursion  
 }
 
 var n = prompt("Position: ");
-var result = fibonacciCalculation(parseInt(n));
+var result = fibonacciCalc(parseInt(n));
 console.log("Number of : " + result);
-alert(fibanacciCalculation(6)); //8
+alert(fibanacciCalc(6)); //8
 
